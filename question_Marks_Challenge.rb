@@ -27,10 +27,18 @@ def QuestionMarks(txt)
         count += 1
         # p "Phrase length: " + count.to_s
 
-        if txt[count].to_s == '?'
-            mark += 1
-            # puts "The phrase has " + mark + " number of question marks."
+        # if txt[count].to_s == '?'
+    
+        if txt[count] == "?"
+            mark =+ 1
         end
+        # if txt[count].to_s == '?'
+        #     mark += 1
+        #     # puts "The phrase has " + mark + " number of question marks."
+        # end
+
+        # txt[count].each_char {|t| puts t}
+        # txt[count].each do {|t| puts t end}
 
         if txt[count].to_i.to_s == txt[count]
         nums += 1
@@ -38,9 +46,9 @@ def QuestionMarks(txt)
 
     end
 
-    p "String length: " + count.to_s
-    p "Number of Question Marks: " + mark.to_s
-    p "# of Numbers in strings: " + nums.to_s
+    puts "String length: " + count.to_s
+    puts "Number of Question Marks: " + mark.to_s
+    puts "# of Numbers in strings: " + nums.to_s
 
 end
 
